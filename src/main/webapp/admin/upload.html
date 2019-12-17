@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 页面meta -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>上传任务测试</title>
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
+<link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="../plugins/adminLTE/css/AdminLTE.css">
+<link rel="stylesheet" href="../plugins/adminLTE/css/skins/_all-skins.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+<!-- <script type="text/javascript" src="../plugins/bootstrap/js/bootstrap-filestyle.js"></script> -->
+<!-- 引入的文件上传样式 -->
+<script type="text/javascript" src="../plugins/angularjs/angular.min.js"></script>
+<!-- <script type="text/javascript" src="../plugins/angularjs/ui-bootstrap-tpls.min.js"></script> -->
+<!-- 提示model文件 -->
+<script type="text/javascript" src="../js/base.js"></script>
+<script type="text/javascript" src="../js/controller/baseController.js"></script>
+<script type="text/javascript" src="../js/controller/uploadController.js"></script>
+<script type="text/javascript" src="../js/service/uploadService.js">
+</script>
+</head>
+<body class="hold-transition skin-red sidebar-mini" ng-app="pinyougou" ng-controller="uploadController">
+	<!-- 正文区域 -->
+		<div class="box-body">
+			<!--tab页-->
+			<div class="nav-tabs-custom">
+				<div class="tab-content">
+					<div class="tab-pane active" id="home">
+						<div class="modal-body">
+							<!-- bootstrap开始 -->
+							<div class="well">
+								<h3>文件上传测试</h3>
+								<hr>
+								<div class="row">
+									<div class="col-xs-6">
+										<!-- <div class="form-group">
+											<input type="file" name="file" id="file">
+											
+										</div> -->
+										
+										<tr>
+								          <td>
+								          <input type="file" id="file" />				                
+					                         <button class="btn btn-primary" type="button" ng-click="uploadfile()">
+				                   		             上传
+					                         </button>	
+					                      </td>
+								        <td>
+									       <img  src="{{imgurl}}" width="200px" height="200px">
+								       </td>
+							       </tr>	
+									</div>
+									<!-- <div class="col-xs-2">
+										<div class="form-group">
+											<button type="submit" class="btn btn-primary"
+												ng-click="uploadfile()">
+												<span class="glyphicon glyphicon-ok"></span> 上传
+											</button>
+										</div>
+									</div> -->
+								</div>
+							</div>
+							<!-- bootstrap结束-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+<!-- <script type="text/javascript"> 
+	//样式初始化
+	$('#file').filestyle({
+		'placeholder' : '请选择上传的源码压缩包(200M以内)'
+	})
+</script> -->
+</html>
